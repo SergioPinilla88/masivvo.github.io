@@ -216,3 +216,34 @@ button {
 .cards .card > .contenido-texto-card p{
     font-weight: 300;
     padding-top: 5px;}
+
+       /* Pie de pagina*/
+
+#bg-piedepagina {
+    position:relative;
+    top:-0px;
+}
+
+#colcenter {
+    background-color: #128D1F;
+    min-height: 90px;
+    position: relative;
+}
+
+
+   /* Pie de pagina FOOTER*/
+footer {
+    background: #128D1F;
+    min-height: 70px;
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
