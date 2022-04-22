@@ -11,7 +11,8 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles.css">
 
   <title>Masivvo</title>
 </head>
@@ -50,12 +51,12 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Quienes Somos</a>
+              <a class="nav-link active" aria-current="page" href="#quienessomos">Quienes Somos</a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Conoce más
               </a>
 
@@ -73,21 +74,21 @@
                 Portafolio
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="index.html">Paquete Plata</a></li>
-                <li><a class="dropdown-item" href="index.html">Paquete Oro</a></li>
-                <li><a class="dropdown-item" href="index.html">Paquete Diamante</a></li>
+                <li><a class="dropdown-item" href="#paqueteplata">Paquete Plata</a></li>
+                <li><a class="dropdown-item" href="#paqueteoro">Paquete Oro</a></li>
+                <li><a class="dropdown-item" href="#paquetediamante">Paquete Diamante</a></li>
               </ul>
             </li>
             <!-- esta linea de "contato", viene originalmente deshabilitada desde boopstrap, yo le elimine ese disabled para poder usarlo y 
             que sea visible en la pagina-->
             <li class="nav-item">
-              <a class="nav-link " href="/index.html">Contacto</a>
+              <a class="nav-link " href="#contacto">Contacto</a>
             </li>
             <!-- aqui se edita la seccion del menu que dice buscar, originalmente desde el boopstrap viene en ingles, simplemente cambie
             la palabra en ingles y la puse en español-->
           </ul>
           <form class="d-flex" action="#">
-            <input class="form-control me-2" type="Texto" placeholder="Search" aria-label="Buscar" name="Search">
+            <input class="form-control me-2" type="Texto" placeholder="Buscar" aria-label="Buscar" name="Buscar">
             <button class="btn btn-outline-success fs-6 d-flex justify-content-center" type="button"
               href="#">Buscar</button>
           </form>
@@ -102,12 +103,6 @@
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <div class="carousel-indicators">
-        <button data-bs-target="#intro" data-bs-slide-to="0" class="active"></button>
-        <button data-bs-target="#intro" data-bs-slide-to="1"></button>
-        <button data-bs-target="#intro" data-bs-slide-to="2"></button>
-        <button data-bs-target="#intro" data-bs-slide-to="3"></button>
-      </div>
 
       <div class="carousel-inner" data-bs-interval="3000">
         <div class="carousel-item active">
@@ -130,24 +125,18 @@
         </button>
       </div>
 
-
+      <br>
       <!--introduccion-->
       <div class="row">
         <div class="col-lg-8">
           <h2 class="text-success" class="p3 fs-2 border-start border-3" id="inicio">Bienvenidos a Masivvo<h2>
-              <h4 class="mx-auto text-start" class="col-6"> Somos una empresa Colombiana
-                fundada en el 2010. Contamos con un equipo de trabajo inter disciplinario con diversas habilidades y
-                experiencia
-                en el área digital.
-
+              <h4 class="mx-auto text-start" class="col-6"> Somos una empresa Colombiana fundada en el 2010. Contamos
+                con un equipo de trabajo inter disciplinario con diversas habilidades y experiencia en el área digital.
                 Nuestro objetivo es agregar valor a las empresas mediante la prestación de servicios de alta calidad en
-                diseño
-                web profesional y responsivo, marketing digital, community management, implementación de sistemas de
-                gestión y
-                mucho más.
+                diseño web profesional y responsivo, marketing digital, community management, implementación de sistemas
+                de gestión y mucho más.
                 Nuestro equipo de trabajo se caracteriza por brindar soluciones a nuestros clientes en el tiempo
-                estimado, con
-                calidad y con un alto grado de responsabilidad y cumplimiento.
+                estimado, con calidad y con un alto grado de responsabilidad y cumplimiento.
               </h4>
         </div>
         <div class="col-lg-4">
@@ -217,7 +206,7 @@ Y ASI DARLE USO A ESTOS ESPACIOS QUE GENERAMOS -->
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 text-justify">
+            <div class="col-lg-4 text-justify" id="quienessomos">
               <h1 class="Text-center">Quienes Somos</h1>
               <H4 class="text-center">Misión</H4>
               <p class="text-justify">Promoveer a nuestros clientes confianza, llevando innovación a sus sueños,
@@ -235,11 +224,16 @@ Y ASI DARLE USO A ESTOS ESPACIOS QUE GENERAMOS -->
               <p class="text-justify"> Logrando asi un gran reconocimiento de nuestro trabajo al solo ver el logo de
                 Masivvo.</p>
               <br>
-              <p class="text-justify"><b> Nombre de la empresa:</b> Masivvo<p>
-                  <p class="text-justify"><b> Que es la empresa:</b> Agencia de Marketing digital<p>
-                      <p class="text-justify"><b> Lugar de operación:</b> Bogotá DC<p>
-                          <p class="text-justify"><b> Ubicación:</b> Calle 93 # 12 - 41<p>
-                              <p class="text-justify"><b> Comercialización:</b> productos y servicios<p>
+              <p class="text-justify"><b> Nombre de la empresa:</b> Masivvo
+              <p>
+              <p class="text-justify"><b> Que es la empresa:</b> Agencia de Marketing digital
+              <p>
+              <p class="text-justify"><b> Lugar de operación:</b> Bogotá DC
+              <p>
+              <p class="text-justify"><b> Ubicación:</b> Calle 93 # 12 - 41
+              <p>
+              <p class="text-justify"><b> Comercialización:</b> productos y servicios
+              <p>
             </div>
           </div>
         </div>
@@ -257,21 +251,21 @@ Y ASI DARLE USO A ESTOS ESPACIOS QUE GENERAMOS -->
                 <h3 class="text-center"><b>Portafolio de productos y servicios</b></h3>
                 <br>
                 <div>
-                  <div class="row">
+                  <div class="row" id="paqueteplata">
                     <span class="border border-warning">
                       <h4><b>Paquete Plata:</b>
                         <h4>
                           <h5><b>Producto:</b></h5>
                           <p>
-                            <h6>• 4 piezas gráficas, en formato .JPG full HD</h6> (disponible para el uso en Twitter,
-                            Facebook o Instagram)
+                          <h6>• 4 piezas gráficas, en formato .JPG full HD</h6> (disponible para el uso en Twitter,
+                          Facebook o Instagram)
                           </p>
                           <h5><b>Servicio:</b></h5>
                           <p>
-                            <h6>• Accesoria general en manejo de redes sociales</h6> (2 reuniones mensuales)
+                          <h6>• Accesoria general en manejo de redes sociales</h6> (2 reuniones mensuales)
                           </p>
                           <p>
-                            <h6>• Community Manager</h6> (publicación de 4 piezas gráficas y redacción de pie de foto)
+                          <h6>• Community Manager</h6> (publicación de 4 piezas gráficas y redacción de pie de foto)
                           </p>
                           <h4><b>Valor: $1.200.000</b></h4>
                     </span>
@@ -282,21 +276,21 @@ Y ASI DARLE USO A ESTOS ESPACIOS QUE GENERAMOS -->
                 <br>
 
                 <div>
-                  <div class="row">
+                  <div class="row" id="paqueteoro">
                     <span class="border border-warning">
                       <h4><b>Paquete Oro:</b>
                         <h4>
                           <h5><b>Producto:</b></h5>
                           <p>
-                            <h6>• 8 piezas gráficas, en formato .JPG full HD</h6> (disponible para el uso en Twitter,
-                            Facebook o Instagram)
+                          <h6>• 8 piezas gráficas, en formato .JPG full HD</h6> (disponible para el uso en Twitter,
+                          Facebook o Instagram)
                           </p>
                           <h5><b>Servicio:</b></h5>
                           <p>
-                            <h6>• Accesoria general en manejo de redes sociales</h6> (2 reuniones mensuales)
+                          <h6>• Accesoria general en manejo de redes sociales</h6> (2 reuniones mensuales)
                           </p>
                           <p>
-                            <h6>• Community Manager</h6> (publicación de 8 piezas gráficas y redacción de pie de foto)
+                          <h6>• Community Manager</h6> (publicación de 8 piezas gráficas y redacción de pie de foto)
                           </p>
                           <h4><b>Valor: $1.600.000</b></h4>
                     </span>
@@ -307,22 +301,22 @@ Y ASI DARLE USO A ESTOS ESPACIOS QUE GENERAMOS -->
                 <br>
 
                 <div>
-                  <div class="row">
+                  <div class="row" id="paquetediamante">
                     <span class="border border-warning">
                       <h4><b>Paquete Diamante:</b>
                         <h4>
                           <h5><b>Producto:</b></h5>
                           <p>
-                            <h6>• 12 piezas gráficas, en formato .JPG full HD </h6> (disponible para el uso en Twitter,
-                            Facebook o Instagram)
+                          <h6>• 12 piezas gráficas, en formato .JPG full HD </h6> (disponible para el uso en Twitter,
+                          Facebook o Instagram)
                           </p>
                           <h5><b>Servicio:</b></h5>
                           <p>
-                            <h6>• Accesoria general en manejo de redes sociales</h6> (2 reuniones mensuales)
+                          <h6>• Accesoria general en manejo de redes sociales</h6> (2 reuniones mensuales)
                           </p>
                           <p>
-                            <h6>• Community Manager</h6> (manejo de redes sociales por 30 días 16 publicaciones de
-                            manera mensual)
+                          <h6>• Community Manager</h6> (manejo de redes sociales por 30 días 16 publicaciones de
+                          manera mensual)
                           </p>
                           <h4><b>Valor: $1.895.000</b></h4>
                     </span>
@@ -362,93 +356,125 @@ Y ASI DARLE USO A ESTOS ESPACIOS QUE GENERAMOS -->
         <br>
         <hr>
         <br>
+        <section class="border border-success">
+          <form action="masivvomarketingdigital@gmail.com" method="post" enctype="text/plain">
+            <div class="container">
+              <div class="row" id="contacto">
+                <div class="col">
+                  <div class="mt-3 mb-3 text-center">
+                    <p class="fw-bold fs-1">Contáctanos</p>
+                    <p>Déjanos tu información en breve te contactaremos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mt-3 mb-3">
+                    <label class="form-label" for="Nombre">Nombre</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mt-3 mb-3">
+                    <label class="form-label" for="Empresa">Empresa</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mt-3 mb-3">
+                    <label class="form-label" for="Email">Email</label>
+                    <input type="email" class="form-control">
+                    <div class="form-text">Nosotros nunca compartiremos tu correo electrónico con nadie.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mt-3 mb-3">
+                    <label class="form-label" for="Ciudad">Ciudad</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mt-3 mb-3">
+                    <label class="form-label" for="Telefono">Telefono</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mt-3 mb-3">
+                    <label class="form-label" for="Servicio que deseas">Servicio que deseas</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected></option>
+                      <option>Diseño de pagina web</option>
+                      <option>Creación de marca</option>
+                      <option>Pauta digital</option>
+                      <option>Plan completo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mt-3 mb-3 form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Aceptas el envio de informacion y promociones a tu correo
+                      electrónico</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-grid gap-2 d-md-flex justify-content-md-end mt-3 mb-3">
+                  <button type="submit" class="btn btn-outline-success">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
 
-        <form action="masivvomarketingdigital@gmail.com" method="post" enctype="text/plain">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="mt-3 mb-3 text-center">
-                  <p class="fw-bold fs-1">Contáctanos</p>
-                  <p>Déjanos tu información en breve te contactaremos</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="mt-3 mb-3">
-                  <label class="form-label" for="Nombre">Nombre</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="mt-3 mb-3">
-                  <label class="form-label" for="Empresa">Empresa</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="mt-3 mb-3">
-                  <label class="form-label" for="Email">Email</label>
-                  <input type="email" class="form-control">
-                  <div class="form-text">Nosotros nunca compartiremos tu correo electrónico con nadie.</div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="mt-3 mb-3">
-                  <label class="form-label" for="Ciudad">Ciudad</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="mt-3 mb-3">
-                  <label class="form-label" for="Telefono">Telefono</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="mt-3 mb-3">
-                  <label class="form-label" for="Servicio que deseas">Servicio que deseas</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected></option>
-                    <option>Diseño de pagina web</option>
-                    <option>Creación de marca</option>
-                    <option>Pauta digital</option>
-                    <option>Plan completo</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="mt-3 mb-3 form-check">
-                  <input type="checkbox" class="form-check-input">
-                  <label class="form-check-label">Aceptas el envio de informacion y promociones a tu correo
-                    electrónico</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col d-grid gap-2 d-md-flex justify-content-md-end mt-3 mb-3">
-                <button type="submit" class="btn btn-outline-success">Enviar</button>
-              </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <section id="Contacto2" class="border-bottom border-0">
+          <div id="bg-piedepagina">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#128D1F" fill-opacity="1"
+                d="M0,160L30,176C60,192,120,224,180,202.7C240,181,300,107,360,112C420,117,480,203,540,245.3C600,288,660,288,720,266.7C780,245,840,203,900,170.7C960,139,1020,117,1080,128C1140,139,1200,181,1260,186.7C1320,192,1380,160,1410,144L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+              </path>
+            </svg>
+
+
+            <div class=container id="colcenter">
+              <div id="titulocolcenter" class="text-center mb-0"></div>
+              <img src="/img/colcenter.webp" alt="colcenter2"  class="img-fluid" class="text-center" width="150px" height="150px" >
+              <p class="fs-5 text-light"> ESTAMOS PARA SERVIRTE </p>
             </div>
           </div>
-        </form>
+        </section>
 
+        <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+          <p class="fs-5 px-3 pt-3">Masivvo. &copy; Todos los derechos reservados 2022</p>
+          <div id="iconos">
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          </div>
 
+        </footer>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+          </script>
 
 </body>
 
